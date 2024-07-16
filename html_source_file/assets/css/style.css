@@ -59,35 +59,79 @@ papertitle { font-weight: 600; font-size: 100%; }
   lightonly { visibility: hidden; }
   darkonly { visibility: visible; }
   papertitle { color: #eeeff0; } }
-  .image.avatar {
-    border-radius: 15px; /* 调整外层圆角 */
-  }
+  .image {
+    border-radius: 0.35em;
+    border: 0;
+    display: inline-block;
+    position: relative; }
+  
+  .image:before {
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 0.35em;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   
   .image.avatar:before {
-    display: none;
-  }
+    display: none; }
   
-  .avatar-img {
-    width: 200px; /* 设置头像宽度 */
-    height: 200px; /* 设置头像高度 */
-    border-radius: 15px; /* 设置圆角 */
-    border: 2px solid #fff; /* 设置边框 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 设置阴影 */
-    object-fit: cover; /* 保持图片比例 */
-    padding: 0; /* 去除内边距 */
-  }
+  .image.avatar img {
+    border-radius: 20%;
+    width: 90%;
+    padding: 50px;
+    border: 2px solid #ddd;
+    padding: 8px;
+    box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3); }
+  
+  .image.logo img {
+    border-radius: 0%;
+    width: 100%;
+    padding: 50px;
+    opacity: 0.5;
+    padding: 10px;
+    box-shadow: 0 0px 0px 0px rgba(200, 200, 200, 0.3);
+    margin-left: -8px;
+    margin-top: -58px;
+    margin-bottom: -10px; }
   
   #header .image.avatar {
-    margin: 0 0 1em 0;
-    width: 200px;
-  }
+    margin: 0 0 em 0;
+    width: 8.00em; }
   
-
-h3, h4, h5, h6 { font-weight: 600; color: #043361; margin: 0 0 20px; }
-
-h1 { font-weight: 500; color: #043361; margin: 0 0 20px; }
-
-h2 { color: #043361; font-weight: 500; margin: 2px 0px 15px; font-size: 157%; }
+  h3 {
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 0px; }
+  
+  h4 {
+    font-weight: 400;
+    color: #545353;
+    margin: 0 0 5px; }
+  
+  h5,
+  h6 {
+    font-weight: 600;
+    color: #404040;
+    margin: 0 0 20px; }
+  
+  h1 {
+    font-weight: 500;
+    color: #000000;
+    margin: 0 0 8px; }
+  
+  h2 {
+    color: #000000;
+    font-weight: 500;
+    margin: 2px 0px 15px;
+    font-size: 157%; }
 
 @media (prefers-color-scheme: dark) { h1, h3, h4, h5, h6 { color: #3eb7f0; }
   h2 { color: #3eb7f0; } }

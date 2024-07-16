@@ -1,124 +1,58 @@
-<h2 id="projects" style="margin: 2px 0px -15px;">Projects</h2>
+## Projects
 
-<div class="projects">
-<ol class="bibliography">
+### Bioinformatics
 
-<h3>Bioinformatics</h3>
 {% for link in site.data.projects.bioinformatics %}
-<li>
-<div class="project-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% endif %}
-    {% if link.field_short %} 
-    <abbr class="badge">{{ link.field_short }}</abbr>
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors | replace: "Zhengxu Tang", "**Zhengxu Tang**" }}</div>
-      <div class="field"><em>{{ link.field }}</em></div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
+<div class="project-item">
+  <img src="{{ link.image }}" class="project-image" alt="{{ link.title }}">
+  <div class="project-details">
+    <h4 class="project-title"><a href="{{ link.pdf }}">{{ link.title }}</a></h4>
+    <p class="project-authors">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</p>
+    <p class="project-field"><em>{{ link.field }}</em></p>
+    <div class="project-links">
+      {% if link.pdf %}<a href="{{ link.pdf }}" class="btn">PDF</a>{% endif %}
+      {% if link.code %}<a href="{{ link.code }}" class="btn">Code</a>{% endif %}
+      {% if link.page %}<a href="{{ link.page }}" class="btn">Project Page</a>{% endif %}
     </div>
+    {% if link.notes %}<p class="project-notes">{{ link.notes }}</p>{% endif %}
   </div>
 </div>
-</li>
-<br>
 {% endfor %}
 
-<h3>Computational Neuroscience</h3>
+### Computational Neuroscience
+
 {% for link in site.data.projects.computational_neuroscience %}
-<li>
-<div class="project-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% endif %}
-    {% if link.field_short %} 
-    <abbr class="badge">{{ link.field_short }}</abbr>
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors | replace: "Zhengxu Tang", "**Zhengxu Tang**" }}</div>
-      <div class="field"><em>{{ link.field }}</em></div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
+<div class="project-item">
+  <img src="{{ link.image }}" class="project-image" alt="{{ link.title }}">
+  <div class="project-details">
+    <h4 class="project-title"><a href="{{ link.pdf }}">{{ link.title }}</a></h4>
+    <p class="project-authors">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</p>
+    <p class="project-field"><em>{{ link.field }}</em></p>
+    <div class="project-links">
+      {% if link.pdf %}<a href="{{ link.pdf }}" class="btn">PDF</a>{% endif %}
+      {% if link.code %}<a href="{{ link.code }}" class="btn">Code</a>{% endif %}
+      {% if link.page %}<a href="{{ link.page }}" class="btn">Project Page</a>{% endif %}
     </div>
+    {% if link.notes %}<p class="project-notes">{{ link.notes }}</p>{% endif %}
   </div>
 </div>
-</li>
-<br>
 {% endfor %}
 
-<h3>Mathematics Modeling</h3>
+### Mathematics Modeling
+
 {% for link in site.data.projects.mathematics_modeling %}
-<li>
-<div class="project-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
-    {% endif %}
-    {% if link.field_short %} 
-    <abbr class="badge">{{ link.field_short }}</abbr>
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors | replace: "Zhengxu Tang", "**Zhengxu Tang**" }}</div>
-      <div class="field"><em>{{ link.field }}</em></div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
+<div class="project-item">
+  <img src="{{ link.image }}" class="project-image" alt="{{ link.title }}">
+  <div class="project-details">
+    <h4 class="project-title"><a href="{{ link.pdf }}">{{ link.title }}</a></h4>
+    <p class="project-authors">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</p>
+    <p class="project-field"><em>{{ link.field }}</em></p>
+    <div class="project-links">
+      {% if link.pdf %}<a href="{{ link.pdf }}" class="btn">PDF</a>{% endif %}
+      {% if link.code %}<a href="{{ link.code }}" class="btn">Code</a>{% endif %}
+      {% if link.page %}<a href="{{ link.page }}" class="btn">Project Page</a>{% endif %}
     </div>
+    {% if link.notes %}<p class="project-notes">{{ link.notes }}</p>{% endif %}
   </div>
 </div>
-</li>
-<br>
 {% endfor %}
-
-</ol>
-</div>

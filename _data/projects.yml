@@ -10,7 +10,7 @@ computational_neuroscience:
   - title: "Computational Neuroscience Project 1"
     authors: "Author C, <b>Zhengxu Tang</b>"
     pdf: "./assets/files/MATH_568_FInal_Project.pdf"
-    image: /assets/files/img/598_final.jpg
+    image: ./assets/files/img/598_final.jpg
     field: "Computational Neuroscience"
     field_short: "CompNeuro"
     code: "https://github.com/TangZhengxu/MATH568_FInal_Project_2023"
@@ -19,7 +19,7 @@ mathematics_modeling:
   - title: "Mathematics Modeling Project 1"
     authors: "<b>Zhengxu Tang</b>, Author E"
     pdf: "./assets/files/462_final.pdf"
-    image: "/assets/files/img/23661721135991_.pic_hd.jpg"
+    image: "./assets/files/img/23661721135991_.pic_hd.jpg"
     field: "Mathematics Modeling"
     field_short: "MathModel"
   - title: "Mathematics Modeling Project 2"

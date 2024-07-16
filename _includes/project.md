@@ -1,101 +1,25 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications and Projects</h2>
+## Projects
 
-<div class="publications">
-<ol class="bibliography">
+{% for category in site.data.projects %}
+### {{ category[0] | capitalize | replace: "_", " " }}
 
-<!-- 
-<li>
-<div class="pub-row">
-
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/principalmanifold.png" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">arXiv</abbr>
+{% for link in category[1] %}
+<div class="project-item" style="display: flex; margin-bottom: 20px; align-items: flex-start;">
+  <div style="flex: 0 0 25%; padding-right: 15px;">
+    <img src="{{ link.image }}" class="project-image" alt="{{ link.title }}" style="width: 100%; border-radius: 5px;">
   </div>
-
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://arxiv.org/abs/2306.06534">Principal and Self-Consistent Positive Semi-Defnite Manifolds</a></div>
-    <div class="author"><strong>Hanchao Zhang, Thaddeus Tarpey</strong></div>
-    <div class="periodical"><em>arXiv <strong>(arXiv)</strong>, Aug. 2023.</em></div>
-    <div class="links">
-    <a href="assets/files/single.html" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
-      <a href="https://arxiv.org/pdf/2306.06534.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <a href="https://github.com/Hanchao-Zhang/Self-Consistency-Clustering" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">GitHub</a>
-      <a href="https://pypi.org/project/KTensors/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Package</a>
-      <a href="assets/files/KTensors.bib" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTeX</a>
-      <strong><i style="color:#7b5aa6">arXiv.org</i></strong>
+  <div class="project-details" style="flex: 1;">
+    <h4 class="project-title" style="margin-top: 0;"><a href="{{ link.pdf }}">{{ link.title }}</a></h4>
+    <p class="project-authors">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</p>
+    <p class="project-field"><em>{{ link.field }}</em></p>
+    <div class="project-links">
+      {% if link.pdf %}<a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>{% endif %}
+      {% if link.code %}<a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>{% endif %}
+      {% if link.page %}<a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Project Page</a>{% endif %}
     </div>
+    {% if link.notes %}<p class="project-notes"><strong><i style="color:#e74d3c">{{ link.notes }}</i></strong></p>{% endif %}
   </div>
 </div>
-</li> -->
+{% endfor %}
 
-
-<li>
-<div class="pub-row">
-
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/nips2023.png" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">Bioinfo</abbr>
-  </div>
-
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="./assets/files/bioinf545_group_6_final_report_ds.pdf">A Multiomics Approach for Investigating Nitrogen Metabolism in Pancreatic Cancer</a></div>
-    <div class="author"><strong>Peter Sajjakulnukit, Kira Holton, Tianrui Ma, <b>Zhengxu Tang</b>, Michael Akpabey</strong></div>
-    <div class="links">
-      <a href="./assets/files/bioinf545_group_6_final_report_ds.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-    </div>
-  </div>
-</div>
-</li>
-
-
-<li>
-<div class="pub-row">
-
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/mediation.jpg" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">arXiv</abbr>
-  </div>
-
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="">On the Inference of Confounders for Mediation Analysis</a></div>
-    <div class="author"><strong>Hanchao Zhang, Thaddeus Tarpey</strong></div>
-    <div class="periodical"><em>arXiv <strong>(arXiv)</strong>, Jun. 2024.</em></div>
-    <div class="links">
-    <!-- <a href="https://arxiv.org/abs/2306.06534" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
-      <a href="https://arxiv.org/pdf/2306.06534.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <a href="https://github.com/Hanchao-Zhang/KTensors" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">GitHub</a>
-      <a href="https://pypi.org/project/KTensors/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Package</a>
-      <a href="assets/files/KTensors.bib" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTeX</a>
-      <strong><i style="color:#7b5aa6">arXiv.org</i></strong> -->
-    </div>
-  </div>
-</div>
-</li>
-  
-
-<li>
-<div class="pub-row">
-
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/OCS.png" class="teaser img-fluid z-depth-1">
-    <abbr class="badge">AHI</abbr>
-  </div>
-
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-    <div class="title"><a href="https://americanhealth.jhu.edu/open-case-studies" target="_blank">Open Case Studies</a></div>
-    <div class="author">Stephanie Hicks, Leah Jager, Margaret Taub, Carrie Wright, John Muschelli, Lyla Atta, Michael Breshock, Qier Meng, Alexandra Stephens, <strong>Hanchao Zhang</strong>, and etc. </div>
-    <div class="periodical"><em>the Johns Hopkins University, and Bloomberg American Health Initiative.</em></div>
-    <div class="links">
-      <a href="https://americanhealth.jhu.edu/open-case-studies" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
-      <a href="https://www.opencasestudies.org" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      <a href="https://github.com/orgs/opencasestudies/teams/jhu-research-assistants" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">GitHub</a>
-      <a href="https://www.opencasestudies.org" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Contact</a>
-    </div>
-  </div>
-</div>
-</li>
-  
-<br>
-
-</ol>
-</div>
+{% endfor %}

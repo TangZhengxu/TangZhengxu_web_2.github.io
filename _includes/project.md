@@ -1,25 +1,30 @@
 ## Projects
 
+<div class="publications">
+<ol class="bibliography">
 {% for category in site.data.projects %}
-### {{ category[0] | capitalize | replace: "_", " " }}
-
-{% for link in category[1] %}
-<div class="project-item" style="display: flex; margin-bottom: 20px; align-items: flex-start;">
-  <div style="flex: 0 0 25%; padding-right: 15px;">
-    <img src="{{ link.image }}" class="project-image" alt="{{ link.title }}" style="width: 100%; border-radius: 5px;">
-  </div>
-  <div class="project-details" style="flex: 1;">
-    <h4 class="project-title" style="margin-top: 0;"><a href="{{ link.pdf }}">{{ link.title }}</a></h4>
-    <p class="project-authors">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</p>
-    <p class="project-field"><em>{{ link.field }}</em></p>
-    <div class="project-links">
-      {% if link.pdf %}<a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>{% endif %}
-      {% if link.code %}<a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>{% endif %}
-      {% if link.page %}<a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Project Page</a>{% endif %}
+  <h3>{{ category[0] | capitalize | replace: "_", " " }}</h3>
+  {% for link in category[1] %}
+  <li>
+    <div class="pub-row">
+      <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+        <img src="{{ link.image }}" class="teaser img-fluid z-depth-1">
+        <abbr class="badge">{{ link.field_short }}</abbr>
+      </div>
+      <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+        <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+        <div class="author">{{ link.authors | replace: "Zhengxu Tang", "<strong>Zhengxu Tang</strong>" }}</div>
+        <div class="periodical"><em>{{ link.field }}</em></div>
+        <div class="links">
+          {% if link.pdf %}<a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>{% endif %}
+          {% if link.code %}<a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>{% endif %}
+          {% if link.page %}<a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>{% endif %}
+          {% if link.notes %}<strong><i style="color:#e74d3c">{{ link.notes }}</i></strong>{% endif %}
+        </div>
+      </div>
     </div>
-    {% if link.notes %}<p class="project-notes"><strong><i style="color:#e74d3c">{{ link.notes }}</i></strong></p>{% endif %}
-  </div>
+  </li>
+  {% endfor %}
+{% endfor %}
+</ol>
 </div>
-{% endfor %}
-
-{% endfor %}

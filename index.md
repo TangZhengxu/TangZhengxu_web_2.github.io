@@ -20,5 +20,5 @@ My current research focuses on building a multimodal model based on multiple typ
 - **[Sep. 2023]** Joined Biomedical Ai Lab!
 
 
-{% include_relative _includes/project.md %}
+{% include_relative _includes/publications.md %}
 

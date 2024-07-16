@@ -59,17 +59,29 @@ papertitle { font-weight: 600; font-size: 100%; }
   lightonly { visibility: hidden; }
   darkonly { visibility: visible; }
   papertitle { color: #eeeff0; } }
-.image { border-radius: 0.35em; border: 0; display: inline-block; position: relative; }
-
-.image:before { -moz-transition: opacity 0.2s ease-in-out; -webkit-transition: opacity 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; border-radius: 0.35em; content: ''; display: block; height: 100%; left: 0; opacity: 0.5; position: absolute; top: 0; width: 100%; }
-
-.image.avatar { border-radius: 100%; }
-
-.image.avatar:before { display: none; }
-
-.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; }
-
-#header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
+  .image.avatar {
+    border-radius: 15px; /* 调整外层圆角 */
+  }
+  
+  .image.avatar:before {
+    display: none;
+  }
+  
+  .avatar-img {
+    width: 200px; /* 设置头像宽度 */
+    height: 200px; /* 设置头像高度 */
+    border-radius: 15px; /* 设置圆角 */
+    border: 2px solid #fff; /* 设置边框 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 设置阴影 */
+    object-fit: cover; /* 保持图片比例 */
+    padding: 0; /* 去除内边距 */
+  }
+  
+  #header .image.avatar {
+    margin: 0 0 1em 0;
+    width: 200px;
+  }
+  
 
 h3, h4, h5, h6 { font-weight: 600; color: #043361; margin: 0 0 20px; }
 

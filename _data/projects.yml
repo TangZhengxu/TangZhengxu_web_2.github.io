@@ -2,7 +2,7 @@ bioinformatics:
   - title: "A Multiomics Approach for Investigating Nitrogen Metabolism in Pancreatic Cancer"
     authors: "Peter Sajjakulnukit, Kira Holton, Tianrui Ma, <b>Zhengxu Tang</b>, Michael Akpabey"
     pdf: "./assets/files/bioinf545_group_6_final_report_ds.pdf"
-    #image: "./assets/files/img/545_final.jpg" 
+    image: "/workspaces/TangZhengxu.github.io/assets/img/teaser_example_2.png" 
     field: "Bioinformatics"
     field_short: "Bioinfo"
 
@@ -10,7 +10,7 @@ computational_neuroscience:
   - title: "Computational Neuroscience Project 1"
     authors: "Author C, <b>Zhengxu Tang</b>"
     pdf: "./assets/files/MATH_568_FInal_Project.pdf"
-    #image: "./assets/files/img/598_final.jpg"
+    image: "/workspaces/TangZhengxu.github.io/html_source_file/assets/img/avatar.png"
     field: "Computational Neuroscience"
     field_short: "CompNeuro"
     code: "https://github.com/TangZhengxu/MATH568_FInal_Project_2023"

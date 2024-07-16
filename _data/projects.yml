@@ -25,6 +25,6 @@ mathematics_modeling:
   - title: "Mathematics Modeling Project 2"
     authors: "<b>Zhengxu Tang</b>, Author F"
     pdf: "./assets/files/462_Midterm.pdf"
-    image: "/assets/files/img/462_midterm.jpg"
+    image: "https://github.com/TangZhengxu/TangZhengxu.github.io/blob/main/assets/img/462_final.png"
     field: "Mathematics Modeling"
     field_short: "MathModel"

@@ -26,4 +26,3 @@ My current research focuses on building a multimodal model based on multiple typ
 
 {% include_relative _includes/project.md %}
 
-{% include_relative _includes/Presentation.md %}

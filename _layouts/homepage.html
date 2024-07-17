@@ -34,6 +34,15 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
 
+    <style>
+      #map-container {
+        width: 300px;
+        height: auto;
+        margin: 20px auto;
+        text-align: center;
+      }
+    </style>
+
   </head>
   <body>
     <div class="wrapper">
@@ -105,7 +114,9 @@
 
       </section>
       <footer>
-        
+        <div id="map-container">
+          <a href="https://mapmyvisitors.com/web/1bw86"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=PCSZy7iScpHn6ahiRsdRNiI01uSCxiXLNSP_9VRszwc&cl=ffffff" alt="Visitor Map" /></a>
+        </div>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
@@ -119,6 +130,5 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
-    <a href="https://mapmyvisitors.com/web/1bw86"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=PCSZy7iScpHn6ahiRsdRNiI01uSCxiXLNSP_9VRszwc&cl=ffffff" /></a>
   </body>
 </html>

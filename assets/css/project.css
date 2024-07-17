@@ -86,3 +86,19 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   height: auto;
 }
 
+#map-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #002D72; /* 背景颜色 */
+  padding: 10px;
+}
+
+#map-container img {
+  max-width: 300px; /* 地图的最大宽度 */
+  height: auto;
+  border: 2px solid #ffffff; /* 白色边框 */
+  border-radius: 5px;
+}

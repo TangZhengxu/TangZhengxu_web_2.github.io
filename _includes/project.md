@@ -8,7 +8,6 @@
   <li>
     <div class="pub-row">
       <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-        <abbr class="badge">{{ link.field_short }}</abbr>
       </div>
       <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
         <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>

@@ -35,11 +35,26 @@
     {% endif %}
 
     <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .wrapper {
+        flex: 1;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff; /* or any other background color you prefer */
+        text-align: center;
+        padding: 10px 0;
+      }
       #map-container {
         width: 300px;
         height: auto;
-        margin: 20px auto;
-        text-align: center;
+        margin: 0 auto;
       }
     </style>
 
@@ -113,12 +128,12 @@
       {% endif %}
 
       </section>
-      <footer>
-        <div id="map-container">
-          <a href="https://mapmyvisitors.com/web/1bw86"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=PCSZy7iScpHn6ahiRsdRNiI01uSCxiXLNSP_9VRszwc&cl=ffffff" alt="Visitor Map" /></a>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div id="map-container">
+        <a href="https://mapmyvisitors.com/web/1bw86"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=PCSZy7iScpHn6ahiRsdRNiI01uSCxiXLNSP_9VRszwc&cl=00274c&c=white" alt="Visitor Map" /></a>
+      </div>
+    </footer>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>

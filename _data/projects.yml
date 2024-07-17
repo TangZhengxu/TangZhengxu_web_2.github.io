@@ -4,7 +4,7 @@ bioinformatics:
     pdf: "./assets/files/bioinf545_group_6_final_report_ds.pdf"
     image: "/workspaces/TangZhengxu.github.io/assets/img/teaser_example_2.png" 
     field: "Bioinformatics"
-    field_short: "Bioinfo"
+    #field_short: "Bioinfo"
 
 computational_neuroscience:
   - title: "Modeling APL-Mediated Local Inhibition in the Fruit Fly Mushroom Body"
@@ -12,7 +12,7 @@ computational_neuroscience:
     pdf: "./assets/files/MATH_568_FInal_Project.pdf"
     image: "/workspaces/TangZhengxu.github.io/html_source_file/assets/img/avatar.png"
     field: "Computational Neuroscience"
-    field_short: "CompNeuro"
+    #field_short: "CompNeuro"
     code: "https://github.com/TangZhengxu/MATH568_FInal_Project_2023"
 
 mathematics_modeling:
@@ -21,10 +21,10 @@ mathematics_modeling:
     pdf: "./assets/files/462_final.pdf"
     #image: "./assets/files/img/23661721135991_.pic_hd.jpg" 
     field: "Mathematics Modeling"
-    field_short: "MathModel"
+    #field_short: "MathModel"
   - title: "Discrete Modeling of Dune-Obstacle Interactions and Dynamics"
     authors: "Horacio Moreno, <b>Zhengxu Tang</b>, Jess Yang"
     pdf: "./assets/files/462_Midterm.pdf"
     #image: "./assets/files/img/462_final.png" 
     field: "Mathematics Modeling"
-    field_short: "MathModel"
+    #field_short: "MathModel"
